@@ -4,7 +4,7 @@
 			{
 				"json": "JPHomebrew",
 				"abbreviation": "JPH",
-				"full": "J.P. Homebrew",
+				"full": "J. P. Homebrew",
 				"url": "https://github.com/jelio94/homebrew",
 				"authors": [
 					"J.P. Hilbrands"
@@ -48,11 +48,10 @@
 			"int": 6,
 			"wis": 16,
 			"cha": 9,
-			"passive": 17,
+			"passive": 21,
 			"cr": "9",
-			"shortName": true,
 			"senses": [
-				"darkvision 60ft"
+				"darkvision 60 ft."
 			],
 			"senseTags": [
 				"D"
@@ -63,33 +62,33 @@
 			"languageTags": [
 				"AB"
 			],
-			"traitTags": [
-				"Charge",
-				"Reckless"
-			],
+			"page": 1,
+			"skill": {
+				"perception": "+11"
+			},
 			"trait": [
 				{
 					"name": "Charge",
 					"entries": [
-						"If the Minatour King moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 22 ({@dice 5d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 17} Strength saving throw or be pushed up to 10 feet away and knocked {@condition prone}."
+						"If the minotaur king moves at least 10 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 22 ({@dice 5d8}) slashing damage. If the target is a creature, it must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}."
 					]
 				},
 				{
 					"name": "Labyrinthine Recall",
 					"entries": [
-						"The Minotaur King can perfectly recall any path it has traveled."
+						"The minotaur king can perfectly recall any path it has traveled."
 					]
 				},
 				{
 					"name": "Reckless",
 					"entries": [
-						"At the start of its turn, the Minotaur King can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+						"At the start of its turn, the minotaur king can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
 					]
 				},
 				{
-					"name": "Labyrinth's Wrath (Recharge {@dice 5-6})",
+					"name": "Labyrinth's Wrath ({@dice 5-6})",
 					"entries": [
-						"The Minotaur King unleashes the wrath of the labyrinth. It causes the labyrinth walls to shift, creating a maze-like effect in a 25-foot radius centred on itself. Any creature within this area must make a {@dc 15} Wisdom saving throw or become disoriented, losing its sense of direction and suffering from the effects of the maze spell (as if cast at 5th level) for 2 rounds. The Minotaur King can use this ability as a reaction when attacked."
+						"The minotaur king unleashes the wrath of the labyrinth. It causes the labyrinth walls to shift, creating a maze-like effect in a 20-foot radius centred on itself. Any creature within this area must make a {@dc 15} Wisdom saving throw or become disoriented, losing its sense of direction and suffering from the effects of the maze spell (as if cast at 5th level) for 2 rounds. The Minotaur King can use this ability as a reaction when attacked."
 					]
 				}
 			],
@@ -97,35 +96,38 @@
 				"frightened",
 				"prone"
 			],
-			"action": [
-				{
-					"name": "Greataxe",
-					"entries": [
-						"{@atk mw} {@hit +9} to hit, reach 5 ft., one target. {@h}24 ({@damage 2d12 + 5}) slashing damage."
-					]
-				},
-				{
-					"name": "Gore",
-					"entries": [
-						"{@atk mw} {@hit +9} to hit, reach 5 ft., one target {@h}  ({@damage 3d8 + 5}) piercing damage."
-					]
-				},
-				{
-					"name": "Frightening Bellow (Recharge {@dice 5-6})",
-					"entries": [
-						"The Minotaur King lets out a thunderous roar that can be heard throughout the labyrinth. Each creature within 30 feet of the Minotaur King that can hear it must make a {@dc 15} Wisdom saving throw. On a failed save, the creature becomes {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
-					]
-				}
+			"traitTags": [
+				"Charge",
+				"Reckless"
 			],
 			"miscTags": [
 				"MW",
 				"AOE"
 			],
+			"action": [
+				{
+					"name": "Greataxe",
+					"entries": [
+						"{@atk mw} {@hit +9} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit +9} to hit, reach 5 ft., one target {@h} ({@damage 3d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Frightening Bellow (Recharge {@dice 5-6})",
+					"entries": [
+						"The minotaur king lets out a thunderous roar that can be heard throughout the labyrinth. Each creature within 30 feet of the minotaur king that can hear it must make a {@dc 15} Wisdom saving throw. On a failed save, the creature becomes {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+					]
+				}
+			],
 			"attachedItems": [
 				"greataxe|phb"
 			],
 			"damageTags": [
-				"P",
 				"S"
 			],
 			"savingThrowForced": [
